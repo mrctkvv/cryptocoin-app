@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoCoin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="HomePage" Height="650" Width="1200">
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="NavigationTextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="WhiteSmoke"/>
+            <Setter Property="Margin" Value="0,0,30,0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Foreground" Value="#bab8b8"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#e6d7ff">
 
+            <StackPanel Grid.Column="0" Orientation="Horizontal" 
+                        HorizontalAlignment="Center">
+                <TextBlock VerticalAlignment="Center"
+                           Text="CryptoCoin"
+                           HorizontalAlignment="Center"
+                           Foreground="BlueViolet"
+                           FontSize="20"
+                           FontFamily="Bell MT"
+                           FontWeight="ExtraBold"/>
+            </StackPanel>
+        </Grid>
+        <Frame Grid.Row="1" x:Name="Frame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

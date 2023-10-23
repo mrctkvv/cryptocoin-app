@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CryptoCoin.Views;
+using CryptoCoin.ViewModels;
 
-namespace CryptoCoin
+namespace CryptoCoin.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CryptoCoinView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CryptoCoinView : Page
     {
-        public MainWindow()
+        public CryptoCoinView()
         {
             InitializeComponent();
-            Frame.Content = new CryptoCoinView();
+           DataContext = new CryptoCoinViewModel();
         }
     }
 }
