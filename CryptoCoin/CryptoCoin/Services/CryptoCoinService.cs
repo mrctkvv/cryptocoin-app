@@ -14,10 +14,12 @@ namespace CryptoCoin.Services
     {
         private readonly HttpClient _http;
         private const string _baseAddress = "https://api.coincap.io/v2/";
+        private const string _apiKey = "05e4b35a-ddcb-4a3e-9e65-684892de3e87";
 
         public CryptoCoinService()
         {
             _http = new HttpClient();
+            _http.DefaultRequestHeaders.Add("Authorization", "Bearer " + _apiKey);
         }
 
         public async Task<List<CryptoCoinModel>> GetCryptoCoins()
