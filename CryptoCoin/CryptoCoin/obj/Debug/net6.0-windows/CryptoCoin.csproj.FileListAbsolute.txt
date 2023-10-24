@@ -6,11 +6,13 @@ C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\n
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.csproj.AssemblyReference.cache
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\CryptoCoinView.g.cs
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\FullCurrencyView.g.cs
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin_MarkupCompile.cache
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin_MarkupCompile.lref
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\CryptoCoinView.baml
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\FullCurrencyView.baml
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.g.resources
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.AssemblyInfoInputs.cache

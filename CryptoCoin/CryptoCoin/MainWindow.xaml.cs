@@ -24,7 +24,12 @@ namespace CryptoCoin
         public MainWindow()
         {
             InitializeComponent();
+           // Frame.Content = new CryptoCoinView();
+        }
+        private void ModelsPageNavigation(object sender, MouseButtonEventArgs e)
+        {
             Frame.Content = new CryptoCoinView();
         }
+
     }
 }

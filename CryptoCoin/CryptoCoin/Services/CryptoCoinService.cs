@@ -12,48 +12,34 @@ namespace CryptoCoin.Services
 {
     public class CryptoCoinService
     {
-        private readonly HttpClient _http;
+        private readonly CryptoCoinApiService _apiService;
         private const string _baseAddress = "https://api.coincap.io/v2/";
-        private const string _apiKey = "05e4b35a-ddcb-4a3e-9e65-684892de3e87";
 
         public CryptoCoinService()
         {
-            _http = new HttpClient();
-            _http.DefaultRequestHeaders.Add("Authorization", "Bearer " + _apiKey);
+            _apiService = new CryptoCoinApiService();
         }
 
         public async Task<List<CryptoCoinModel>> GetCryptoCoins()
         {
-            var response = await GetRequest(_baseAddress + "assets");
+            var response = await _apiService.GetRequest(_baseAddress + "assets");
             var apiAssets = await GetApiData<List<CryptoCoinModel>>(response);
 
             return apiAssets is null ? new List<CryptoCoinModel>() : apiAssets;
         }
 
-        public async Task<CryptoCoinModel> GetAssetById(string? id)
+        public async Task<CryptoCoinModel> GetModelById(string? id)
         {
             if (string.IsNullOrEmpty(id?.Trim()))
                 throw new ArgumentNullException(nameof(id));
 
-            var response = await GetRequest(_baseAddress + $"assets/{id}");
+            var response = await _apiService.GetRequest(_baseAddress + $"assets/{id}");
             var apiAsset = await GetApiData<CryptoCoinModel>(response);
 
             return apiAsset is null ? new CryptoCoinModel() : apiAsset;
         }
 
-        private async Task<HttpResponseMessage> GetRequest(string? url)
-        {
-            if (string.IsNullOrEmpty(url?.Trim()))
-                throw new ArgumentNullException(nameof(url));
-
-            var response = await _http.GetAsync(url);
-            if (response is null)
-                throw new ArgumentException($"Bad request to url:{url}");
-
-            return response;
-        }
-
-        private async Task<M?> GetApiData<M>(HttpResponseMessage responseMessage) where M : class
+        private static async Task<M?> GetApiData<M>(HttpResponseMessage responseMessage) where M : class
         {
             string stringResponse = await responseMessage.Content.ReadAsStringAsync();
             try

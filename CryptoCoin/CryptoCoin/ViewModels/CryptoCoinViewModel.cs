@@ -10,15 +10,9 @@ using CryptoCoin.Services;
 
 namespace CryptoCoin.ViewModels
 {
-    public class CryptoCoinViewModel
+    internal class CryptoCoinViewModel : BaseViewModel
     {
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
         private readonly CryptoCoinService _cryptoCoinService;
         private ObservableCollection<CryptoCoinModel> _models;

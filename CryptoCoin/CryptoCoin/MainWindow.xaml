@@ -26,7 +26,23 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid Background="#e6d7ff">
-
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal" 
                         HorizontalAlignment="Center">
                 <TextBlock VerticalAlignment="Center"
@@ -37,6 +53,10 @@
                            FontFamily="Bell MT"
                            FontWeight="ExtraBold"/>
             </StackPanel>
+            <TextBlock Grid.Column="3"
+                       Text="Currency" 
+                       Style="{StaticResource NavigationTextBlock}"
+                       MouseUp="ModelsPageNavigation"/>
         </Grid>
         <Frame Grid.Row="1" x:Name="Frame" NavigationUIVisibility="Hidden"/>
     </Grid>

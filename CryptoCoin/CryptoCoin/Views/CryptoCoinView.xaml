@@ -32,14 +32,7 @@
                            Grid.Column="0"
                            Text="Search By"
                            FontSize="14"
-                           Foreground="WhiteSmoke"/>
-
-                <TextBlock Grid.Row="0"
-                           Grid.Column="1"
-                           Text="Search string"
-                           FontSize="14"
-                           Foreground="WhiteSmoke"
-                           Margin="20,0,0,0"/>
+                           Foreground="Black"/>
 
                 <ComboBox Grid.Column="0" 
                           Grid.Row="1"
@@ -115,6 +108,7 @@
                 </ListView.ItemContainerStyle>
                 <ListView.Style>
                     <Style TargetType="ListView">
+                        <EventSetter Event="MouseLeftButtonUp" Handler="ListViewItem_MouseLeftButtonUp" />
                         <Setter Property="Background" Value="#d2afff"/>
                         <Setter Property="Foreground" Value="WhiteSmoke"/>
                         <Setter Property="Opacity" Value="0.7"/>

@@ -29,6 +29,21 @@ namespace CryptoCoin.Views
            DataContext = new CryptoCoinViewModel();
         }
 
+        private void ListViewItem_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (CoinsGrid.SelectedItem.GetType() == typeof(CryptoCoinModel))
+            {
+                var model = (CryptoCoinModel)CoinsGrid.SelectedItem;
+                if (model.Id is null)
+                {
+                    MessageBox.Show("Currency Id is null.");
+                    return;
+                }
+                var cryptoCoinPage = new FullCurrencyView(model.Id);
+                CurrencyFrame.Content = cryptoCoinPage;
+            }
+            else MessageBox.Show("Something went wrong. Try to pick another currency");
+        }
 
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -75,7 +90,7 @@ namespace CryptoCoin.Views
             CurrencyFrame.Content = null;
         }
 
-        private ObservableCollection<CryptoCoinModel> GetMatchingAssets(List<CryptoCoinModel> assetsList, Func<CryptoCoinModel, bool> predicate)
+        private static ObservableCollection<CryptoCoinModel> GetMatchingAssets(List<CryptoCoinModel> assetsList, Func<CryptoCoinModel, bool> predicate)
         {
             var mathingModels = assetsList.Where(predicate).ToList();
 
