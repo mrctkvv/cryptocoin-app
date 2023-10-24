@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CryptoCoin.Models;
 using CryptoCoin.ViewModels;
 
 namespace CryptoCoin.Views
@@ -25,6 +27,59 @@ namespace CryptoCoin.Views
         {
             InitializeComponent();
            DataContext = new CryptoCoinViewModel();
+        }
+
+
+        private void SearchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var searchString = SearchStringTextBox.Text.Trim();
+            var viewModel = DataContext as CryptoCoinViewModel;
+            if (viewModel is null)
+            {
+                MessageBox.Show("Something went wrong");
+                return;
+            }
+            if (string.IsNullOrEmpty(searchString))
+            {
+                viewModel.SelectedModels = viewModel.Models;
+            }
+            else
+            {
+                searchString = searchString.ToLower();
+                var searchBy = ModelsSearchBy.SelectedValue as TextBlock;
+                if (searchBy is null) return;
+                switch (searchBy.Text.ToLower())
+                {
+                    case "id":
+                        viewModel.SelectedModels = GetMatchingAssets(viewModel.Models.ToList(),
+                            asset => asset.Id != null && asset.Id.ToLower().Contains(searchString));
+                        break;
+                    case "name":
+                        viewModel.SelectedModels = GetMatchingAssets(viewModel.Models.ToList(),
+                            asset => asset.Name != null && asset.Name.ToLower().Contains(searchString));
+                        break;
+                }
+            }
+        }
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SearchStringTextBox.Text = string.Empty;
+            var viewModel = DataContext as CryptoCoinViewModel;
+            if (viewModel is null)
+            {
+                MessageBox.Show("Something went wrong");
+                return;
+            }
+            viewModel.SelectedModels = viewModel.Models;
+            CurrencyFrame.Content = null;
+        }
+
+        private ObservableCollection<CryptoCoinModel> GetMatchingAssets(List<CryptoCoinModel> assetsList, Func<CryptoCoinModel, bool> predicate)
+        {
+            var mathingModels = assetsList.Where(predicate).ToList();
+
+            return new ObservableCollection<CryptoCoinModel>(mathingModels);
         }
     }
 }

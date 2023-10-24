@@ -44,7 +44,7 @@
                 <ComboBox Grid.Column="0" 
                           Grid.Row="1"
                           SelectedIndex="0"
-                          x:Name="AssetsSearchBy">
+                          x:Name="ModelsSearchBy">
                     <TextBlock Text="Id" />
                     <TextBlock Text="Name" />
                     <ComboBox.Style>
@@ -69,11 +69,13 @@
 
                 <Button Grid.Row="1" Grid.Column="2"
                         Content="Search"
+                        Click="SearchBtn_Click"
                         Name="SearchBtn"
                         IsDefault="True"/>
 
                 <Button Grid.Row="1" Grid.Column="3"
                         Content="Clear"
+                        Click="ClearBtn_Click"
                         Name="ClearBtn"
                         IsCancel="True"/>
             </Grid>
@@ -84,13 +86,18 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <ListView Grid.Row="1" ItemsSource="{Binding Models  }" Name="CoinsGrid">
+            <ListView Grid.Row="1" ItemsSource="{Binding SelectedModels  }" Name="CoinsGrid">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Id"/>
-                        <GridViewColumn Header="Name" />
-                        <GridViewColumn Header="Symbol" />
-                        <GridViewColumn Header="Price" />
+                        <GridViewColumn Header="Id" 
+                                        DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Name" 
+                                        DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Symbol" 
+                                        DisplayMemberBinding="{Binding Symbol}"
+                                        x:Name="BaseSymbol"/>
+                        <GridViewColumn Header="Price" 
+                                        DisplayMemberBinding="{Binding PriceUsd}"/>
                     </GridView>
                 </ListView.View>
 
