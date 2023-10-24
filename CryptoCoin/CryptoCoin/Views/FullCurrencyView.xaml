@@ -71,6 +71,10 @@
         <TextBlock Grid.Column="1" Grid.Row="11" Text="{Binding Model.VWap24Hr}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="12" Text="Explorer"/>
-        <TextBlock Grid.Column="1" Grid.Row="12" Text="{Binding Model.Explorer}"/>
+        <TextBlock Grid.Column="1" Grid.Row="12">
+            <Hyperlink NavigateUri="{Binding Model.Explorer}" RequestNavigate="Hyperlink_RequestNavigate">
+                <TextBlock Text="{Binding Model.Explorer}" Foreground="Blue" TextDecorations="Underline"/>
+            </Hyperlink>
+        </TextBlock>
     </Grid>
 </Page>
