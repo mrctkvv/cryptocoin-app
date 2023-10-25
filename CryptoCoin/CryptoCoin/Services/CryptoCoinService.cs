@@ -39,20 +39,6 @@ namespace CryptoCoin.Services
             return apiAsset is null ? new CryptoCoinModel() : apiAsset;
         }
 
-        //public async Task<List<HistoricalDataPoint>> GetHistoricalDataById(string? id, string interval)
-        //{
-        //    if (string.IsNullOrEmpty(id?.Trim()))
-        //        throw new ArgumentNullException(nameof(id));
-
-        //    if (string.IsNullOrEmpty(interval?.Trim()))
-        //        throw new ArgumentNullException(nameof(interval));
-
-        //    var response = await _apiService.GetRequest(_baseAddress + $"assets/{id}/history?interval={interval}");
-        //    var apiHistoricalData = await GetApiData<List<HistoricalDataPoint>>(response);
-
-        //    return apiHistoricalData ?? new List<HistoricalDataPoint>();
-        //}
-
         public async Task<List<HistoricalDataPoint>> GetHistoricalDataById(string currencyId)
         {
 

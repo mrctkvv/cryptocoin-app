@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoCoin"
         mc:Ignorable="d"
-        Title="HomePage" Height="650" Width="1200">
+        Title="CryptoCoinApplication" Height="650" Width="1200">
     <Window.Resources>
         <Style TargetType="TextBlock" x:Key="NavigationTextBlock">
             <Setter Property="VerticalAlignment" Value="Center"/>

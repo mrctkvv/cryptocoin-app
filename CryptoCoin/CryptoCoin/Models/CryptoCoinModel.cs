@@ -21,12 +21,12 @@ namespace CryptoCoin.Models
         public string? VWap24Hr { get; set; }
         public string? Explorer { get; set; }
         public long timestamp { get; set; }
-        public List<HistoricalDataPoint> HistoricalData { get; set; }
+        public List<HistoricalDataPoint>? HistoricalData { get; set; }
     }
 
     public class HistoricalDataPoint
     {
-        public string priceUsd { get; set; }
+        public string? priceUsd { get; set; }
         public long time { get; set; }
         public DateTime date { get; set; }
     }

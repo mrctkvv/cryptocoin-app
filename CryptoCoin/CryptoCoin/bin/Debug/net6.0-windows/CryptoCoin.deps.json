@@ -13,11 +13,6 @@
         },
         "runtime": {
           "CryptoCoin.dll": {}
-        },
-        "resources": {
-          "uk-UA/CryptoCoin.resources.dll": {
-            "locale": "uk-UA"
-          }
         }
       },
       "LiveCharts/0.9.7": {
