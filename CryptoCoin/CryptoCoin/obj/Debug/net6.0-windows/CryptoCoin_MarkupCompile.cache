@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\App.xaml
-3-970454323
+5-1509650889
 
-11-231632231
-194-1617825143
-MainWindow.xaml;Views\CryptoCoinView.xaml;Views\FullCurrencyView.xaml;
+151949464049
+1991234171344
+MainWindow.xaml;Views\ChartsView.xaml;Views\CryptoCoinView.xaml;Views\FullCurrencyView.xaml;Views\HistoricalChartView.xaml;
 
 False
 

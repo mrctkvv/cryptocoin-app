@@ -7,10 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\ChartsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\CryptoCoinView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\FullCurrencyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HistoricalChartView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +24,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\ChartsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\CryptoCoinView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\FullCurrencyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HistoricalChartView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

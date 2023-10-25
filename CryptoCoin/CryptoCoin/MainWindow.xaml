@@ -10,7 +10,7 @@
         <Style TargetType="TextBlock" x:Key="NavigationTextBlock">
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="WhiteSmoke"/>
+            <Setter Property="Foreground" Value="Black"/>
             <Setter Property="Margin" Value="0,0,30,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
@@ -53,10 +53,14 @@
                            FontFamily="Bell MT"
                            FontWeight="ExtraBold"/>
             </StackPanel>
-            <TextBlock Grid.Column="3"
+            <TextBlock Grid.Column="1"
                        Text="Currency" 
                        Style="{StaticResource NavigationTextBlock}"
                        MouseUp="ModelsPageNavigation"/>
+            <TextBlock Grid.Column="2"
+                       Text="Charts" 
+                       Style="{StaticResource NavigationTextBlock}"
+                       MouseUp="ChartsPageNavigation"/>
         </Grid>
         <Frame Grid.Row="1" x:Name="Frame" NavigationUIVisibility="Hidden"/>
     </Grid>

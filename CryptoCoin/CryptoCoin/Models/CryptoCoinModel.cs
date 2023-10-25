@@ -20,5 +20,15 @@ namespace CryptoCoin.Models
         public string? ChangePercent24Hr { get; set; }
         public string? VWap24Hr { get; set; }
         public string? Explorer { get; set; }
+        public long timestamp { get; set; }
+        public List<HistoricalDataPoint> HistoricalData { get; set; }
+    }
+
+    public class HistoricalDataPoint
+    {
+        public string priceUsd { get; set; }
+        public object time { get; set; }
+        public DateTime date { get; set; }
     }
 }
+

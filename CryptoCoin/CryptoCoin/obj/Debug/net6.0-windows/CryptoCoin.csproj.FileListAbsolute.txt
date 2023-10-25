@@ -23,3 +23,13 @@ C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\n
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.pdb
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.genruntimeconfig.cache
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\ref\CryptoCoin.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\ChartsView.g.cs
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\HistoricalChartView.g.cs
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\ChartsView.baml
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\Views\HistoricalChartView.baml
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.csproj.CopyComplete
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\net6.0-windows\OxyPlot.Wpf.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
