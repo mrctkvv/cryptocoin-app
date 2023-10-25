@@ -38,3 +38,5 @@ C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\n
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.Strings.uk-UA.resources
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\CryptoCoin.csproj.GenerateResource.cache
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\uk-UA\CryptoCoin.resources.dll
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\DarkTheme.baml
+C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\obj\Debug\net6.0-windows\LightTheme.baml

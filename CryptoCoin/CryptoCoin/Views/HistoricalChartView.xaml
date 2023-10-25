@@ -12,10 +12,11 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="HistoricalChartView">
 
+  
     <Grid>
-        <wpf:CartesianChart Series="{Binding HistoricalDataSeries}">
+        <wpf:CartesianChart Series="{Binding HistoricalDataSeries}" Zoom="X">
             <wpf:CartesianChart.AxisX>
-                <wpf:Axis Title="Time" Labels="{Binding XLabels}"  />
+                <wpf:Axis Title="Time" Labels="{Binding XLabels}" />
             </wpf:CartesianChart.AxisX>
             <wpf:CartesianChart.AxisY>
                 <wpf:Axis Title="Price" LabelFormatter="{Binding PriceLabelFormatter}" />

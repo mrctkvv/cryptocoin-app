@@ -49,17 +49,17 @@ namespace CryptoCoin.ViewModels
             var modelsList = await _cryptoCoinService.GetCryptoCoins();
             Models = new ObservableCollection<CryptoCoinModel>(modelsList);
             SelectedModels = Models;
-            await UpdateHistoricalData();
+           // await UpdateHistoricalData();
         }
 
-        private async Task UpdateHistoricalData()
-        {
-            foreach (var cryptoCoinModel in Models)
-            {
-                var historicalData = await _cryptoCoinService.GetHistoricalDataById(cryptoCoinModel.Id);
-                cryptoCoinModel.HistoricalData = new List<HistoricalDataPoint>(historicalData);
-            }
-        }
+        //private async Task UpdateHistoricalData()
+        //{
+        //    foreach (var cryptoCoinModel in Models)
+        //    {
+        //        var historicalData = await _cryptoCoinService.GetHistoricalDataById(cryptoCoinModel.Id);
+        //        cryptoCoinModel.HistoricalData = new List<HistoricalDataPoint>(historicalData);
+        //    }
+        //}
 
     }
 }

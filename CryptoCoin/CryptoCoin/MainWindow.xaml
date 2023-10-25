@@ -10,7 +10,7 @@
         <Style TargetType="TextBlock" x:Key="NavigationTextBlock">
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="#5a228b"/>
             <Setter Property="Margin" Value="0,0,30,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
@@ -21,6 +21,7 @@
         </Style>
     </Window.Resources>
     <Grid>
+    
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <RowDefinition/>

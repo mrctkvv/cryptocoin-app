@@ -57,7 +57,7 @@ namespace CryptoCoin.ViewModels
             else
             {
                 // Convert the priceUsd values to double and update the chart values.
-                var chartValues = historicalData.Select(data => double.Parse(data.priceUsd));
+                var chartValues = historicalData.Select(data => double.Parse(data.priceUsd)).ToList();
 
                 HistoricalDataSeries.Add(new LineSeries
                 {

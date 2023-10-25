@@ -27,7 +27,7 @@ namespace CryptoCoin.Models
     public class HistoricalDataPoint
     {
         public string priceUsd { get; set; }
-        public object time { get; set; }
+        public long time { get; set; }
         public DateTime date { get; set; }
     }
 }
