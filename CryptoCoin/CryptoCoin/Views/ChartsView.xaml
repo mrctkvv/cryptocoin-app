@@ -33,12 +33,12 @@
                            Grid.Column="0"
                            Text="Search By"
                            FontSize="14"
-                           Foreground="Black"/>
+                           Foreground="Black" FontFamily="Bodoni MT"/>
 
                 <ComboBox Grid.Column="0" 
                           Grid.Row="1"
                           SelectedIndex="0"
-                          x:Name="ModelsSearchBy">
+                          x:Name="ModelsSearchBy" FontFamily="Bodoni MT">
                     <TextBlock Text="Id" />
                     <TextBlock Text="Name" />
                     <ComboBox.Style>
@@ -111,7 +111,7 @@
                     <Style TargetType="ListView">
                         <EventSetter Event="MouseLeftButtonUp" Handler="ListViewItem_MouseLeftButtonUp" />
                         <Setter Property="Background" Value="#d2afff"/>
-                        <Setter Property="Foreground" Value="WhiteSmoke"/>
+                        <Setter Property="Foreground" Value="#5a228b"/>
                         <Setter Property="Opacity" Value="0.7"/>
                         <Setter Property="FontSize" Value="13"/>
                     </Style>

@@ -55,12 +55,14 @@
             </StackPanel>
             <TextBlock Grid.Column="1"
                        Text="Currency" 
+                       Name="Currency"
                        Style="{StaticResource NavigationTextBlock}"
-                       MouseUp="ModelsPageNavigation"/>
+                       MouseUp="ModelsPageNavigation" HorizontalAlignment="Left" Margin="10,0,0,0" FontFamily="Bodoni MT" FontSize="14"/>
             <TextBlock Grid.Column="2"
                        Text="Charts" 
+                       Name ="Charts"
                        Style="{StaticResource NavigationTextBlock}"
-                       MouseUp="ChartsPageNavigation"/>
+                       MouseUp="ChartsPageNavigation" HorizontalAlignment="Left" Margin="19,0,0,0" FontFamily="Bodoni MT" FontSize="14"/>
         </Grid>
         <Frame Grid.Row="1" x:Name="Frame" NavigationUIVisibility="Hidden"/>
     </Grid>

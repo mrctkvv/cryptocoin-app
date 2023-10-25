@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Maria\Documents\GitHub\cryptocoin-app\CryptoCoin\CryptoCoin\App.xaml
 5-1509650889
 
-151949464049
+16-1299359467
 1991234171344
 MainWindow.xaml;Views\ChartsView.xaml;Views\CryptoCoinView.xaml;Views\FullCurrencyView.xaml;Views\HistoricalChartView.xaml;
 
-False
+True
 

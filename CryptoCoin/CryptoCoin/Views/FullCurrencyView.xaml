@@ -35,45 +35,45 @@
                    Text="Currency Information"
                    FontSize="20"
                    Foreground="White"
-                   FontWeight="ExtraBold"/>
+                   FontWeight="ExtraBold" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="1" Text="ID:"/>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Model.Id}"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="ID:" Name="Id" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Model.Id}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="2" Text="Rank" />
-        <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Model.Rank}"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Rank" FontFamily="Bodoni MT" />
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Model.Rank}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="3" Text="Symbol"/>
-        <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Model.Symbol}"/>
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Symbol" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Model.Symbol}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="4" Text="Name"/>
-        <TextBlock Grid.Column="1" Grid.Row="4" Text="{Binding Model.Name}"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Name" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="{Binding Model.Name}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="5" Text="Supply"/>
-        <TextBlock Grid.Column="1" Grid.Row="5" Text="{Binding Model.Supply}"/>
+        <TextBlock Grid.Column="0" Grid.Row="5" Text="Supply" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="{Binding Model.Supply}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="6" Text="Max supply"/>
-        <TextBlock Grid.Column="1" Grid.Row="6" Text="{Binding Model.MaxSupply}"/>
+        <TextBlock Grid.Column="0" Grid.Row="6" Text="Max supply" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" Text="{Binding Model.MaxSupply}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="7" Text="Market cap USD"/>
-        <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding Model.MarketCapUsd}"/>
+        <TextBlock Grid.Column="0" Grid.Row="7" Text="Market cap USD" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding Model.MarketCapUsd}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="8" Text="Volume per 24 hours"/>
-        <TextBlock Grid.Column="1" Grid.Row="8" Text="{Binding Model.VolumeUsd24Hr}"/>
+        <TextBlock Grid.Column="0" Grid.Row="8" Text="Volume per 24 hours" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="8" Text="{Binding Model.VolumeUsd24Hr}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="9" Text="Price USD"/>
-        <TextBlock Grid.Column="1" Grid.Row="9" Text="{Binding Model.PriceUsd}"/>
+        <TextBlock Grid.Column="0" Grid.Row="9" Text="Price USD" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="9" Text="{Binding Model.PriceUsd}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="10" Text="Change percent per 24 hours"/>
-        <TextBlock Grid.Column="1" Grid.Row="10" Text="{Binding Model.ChangePercent24Hr}" />
+        <TextBlock Grid.Column="0" Grid.Row="10" Text="Change percent per 24 hours" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="10" Text="{Binding Model.ChangePercent24Hr}" FontFamily="Bodoni MT" />
 
-        <TextBlock Grid.Column="0" Grid.Row="11" Text="VWAp per 24 hours"/>
-        <TextBlock Grid.Column="1" Grid.Row="11" Text="{Binding Model.VWap24Hr}"/>
+        <TextBlock Grid.Column="0" Grid.Row="11" Text="VWAp per 24 hours" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="11" Text="{Binding Model.VWap24Hr}" FontFamily="Bodoni MT"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="12" Text="Explorer"/>
-        <TextBlock Grid.Column="1" Grid.Row="12">
+        <TextBlock Grid.Column="0" Grid.Row="12" Text="Explorer" FontFamily="Bodoni MT"/>
+        <TextBlock Grid.Column="1" Grid.Row="12" FontFamily="Bodoni MT">
             <Hyperlink NavigateUri="{Binding Model.Explorer}" RequestNavigate="Hyperlink_RequestNavigate">
-                <TextBlock Text="{Binding Model.Explorer}" Foreground="Blue" TextDecorations="Underline"/>
+                <TextBlock Text="{Binding Model.Explorer}" Foreground="Blue" TextDecorations="Underline" FontFamily="Bodoni MT"/>
             </Hyperlink>
         </TextBlock>
     </Grid>

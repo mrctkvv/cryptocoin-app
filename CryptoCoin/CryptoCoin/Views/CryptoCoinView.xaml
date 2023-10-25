@@ -25,25 +25,24 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0" 
                            Grid.Column="0"
                            Text="Search By"
                            FontSize="14"
-                           Foreground="Black"/>
+                           Foreground="#5a228b" FontFamily="Bodoni MT"/>
 
                 <ComboBox Grid.Column="0" 
                           Grid.Row="1"
                           SelectedIndex="0"
-                          x:Name="ModelsSearchBy">
+                          x:Name="ModelsSearchBy" FontFamily="Bodoni MT">
                     <TextBlock Text="Id" />
                     <TextBlock Text="Name" />
                     <ComboBox.Style>
                         <Style TargetType="ComboBox">
-                            <Setter Property="Background" Value="WhiteSmoke"/>
-                            <Setter Property="FontFamily"  Value="Fonts/#Ubuntu"/>
+                            <Setter Property="Background" Value="#5a228b "/>
                             <Setter Property="HorizontalContentAlignment" Value="Center"/>
                             <Setter Property="VerticalContentAlignment" Value="Center"/>
                         </Style>
@@ -52,7 +51,7 @@
 
                 <TextBox Grid.Row="1"
                          Grid.Column="1"
-                         Background="WhiteSmoke" 
+                         Background="WhiteSmoke " 
                          Foreground="Gray"
                          FontStyle="Italic"
                          Padding="5" 
@@ -64,13 +63,13 @@
                         Content="Search"
                         Click="SearchBtn_Click"
                         Name="SearchBtn"
-                        IsDefault="True"/>
+                        IsDefault="True" FontFamily="Bodoni MT"/>
 
                 <Button Grid.Row="1" Grid.Column="3"
                         Content="Clear"
                         Click="ClearBtn_Click"
                         Name="ClearBtn"
-                        IsCancel="True"/>
+                        IsCancel="True" FontFamily="Bodoni MT"/>
             </Grid>
         </StackPanel>
 
@@ -79,7 +78,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <ListView Grid.Row="1" ItemsSource="{Binding SelectedModels  }" Name="CoinsGrid">
+            <ListView Grid.Row="1" ItemsSource="{Binding SelectedModels  }" Name="CoinsGrid" FontFamily="Bodoni MT">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Id" 
@@ -101,7 +100,7 @@
                                 <Setter Property="Background" Value="#d2afff"/>
                             </Trigger>
                             <Trigger Property="IsSelected" Value="True">
-                                <Setter Property="Background" Value="#e6d7ff"/>
+                                <Setter Property="Background" Value="#e6d7ff "/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -110,7 +109,7 @@
                     <Style TargetType="ListView">
                         <EventSetter Event="MouseLeftButtonUp" Handler="ListViewItem_MouseLeftButtonUp" />
                         <Setter Property="Background" Value="#d2afff"/>
-                        <Setter Property="Foreground" Value="WhiteSmoke"/>
+                        <Setter Property="Foreground" Value="#5a228b "/>
                         <Setter Property="Opacity" Value="0.7"/>
                         <Setter Property="FontSize" Value="13"/>
                     </Style>
